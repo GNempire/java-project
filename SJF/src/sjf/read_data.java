@@ -20,7 +20,7 @@ public class read_data {
 			while(line!=null){
 				line=br.readLine();
 				if (line!=null){
-					array=line.split(" ");
+					array=line.split("\\s{1,}");
 					taskID=Integer.parseInt(array[0]);
 					arrivalTime=Integer.parseInt(array[1]);
 					serviceTime=Integer.parseInt(array[2]);

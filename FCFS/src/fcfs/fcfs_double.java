@@ -1,5 +1,9 @@
 package fcfs;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 public class fcfs_double {
@@ -129,13 +133,17 @@ public class fcfs_double {
 		}
 		return list;
 	}
-	public void printList(List<task> list){
+	public void printList(List<task> list) throws IOException{
 		task t=new task();
-		System.out.println("任务编号\t到达时间\t服务时间\t开始时间\t完成时间\t周转时间\t带权周转时间");
+		File file = new File("./result/double_queue_result.txt");
+		BufferedWriter out = new BufferedWriter(new FileWriter(file));
+		out.write("任务编号\t到达时间\t服务时间\t开始时间\t完成时间\t周转时间\t带权周转时间\n");
 		for(int i=0;i<list.size();i++){
 			t=list.get(i);
-			System.out.println(t.getTaskID()+"\t"+t.getArrivalTime()+"\t"+t.getServiceTime()+"\t"+
-			t.getStartingTime()+"\t"+t.getFinishingTime()+"\t"+t.getTurnAroundTime()+"\t"+t.getWeightTurnAroundTime());
+			out.write(t.getTaskID()+"\t\t"+t.getArrivalTime()+"\t\t"+t.getServiceTime()+"\t\t"+
+			t.getStartingTime()+"\t\t"+t.getFinishingTime()+"\t\t"+t.getTurnAroundTime()+"\t\t"+t.getWeightTurnAroundTime()+"\n");
 		}
+		out.flush();
+		out.close();
 	}
 }
