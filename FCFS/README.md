@@ -18,7 +18,7 @@
   * 当有两个处理队列时的情况。
 ### 三、实验结果
 -----------------
-1. 当只有一个处理队列时的情况结果：
+1. 当只有一个处理队列时的情况结果：<br>
 <img src="https://github.com/GNempire/java-project/blob/master/FCFS/FCFS%E5%8D%95%E9%98%9F%E5%88%97%E6%88%AA%E5%9B%BE.png">
-2. 当有两个处理队列时的情况结果：
+2. 当有两个处理队列时的情况结果：<br>
 <img src="https://github.com/GNempire/java-project/blob/master/FCFS/FCFS%E5%8D%95%E9%98%9F%E5%88%97%E6%88%AA%E5%9B%BE.png">
