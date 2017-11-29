@@ -12,6 +12,6 @@
 ### 三、实验结果
 -----------------
 1. 当只有一个处理队列时的情况结果：<br>
-<img src="https://github.com/123012015105/JAVA/blob/master/SJF/images/SJF%E5%8D%95%E9%98%9F%E5%88%97%E6%88%AA%E5%9B%BE.png">
+<img src="https://github.com/GNempire/java-project/blob/master/SJF/FCFS%E5%8D%95%E9%98%9F%E5%88%97%E6%88%AA%E5%9B%BE.png">
 2. 当有两个处理队列时的情况结果：
-<img src="https://github.com/123012015105/JAVA/blob/master/SJF/images/SJF%E5%8F%8C%E9%98%9F%E5%88%97%E6%88%AA%E5%9B%BE.png">
+<img src="https://github.com/GNempire/java-project/blob/master/SJF/FCFS%E5%8F%8C%E9%98%9F%E5%88%97%E6%88%AA%E5%9B%BE.png">
