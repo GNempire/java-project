@@ -112,11 +112,13 @@ public class sjf_single {
 	//	System.out.println("任务编号\t到达时间\t服务时间\t开始时间\t完成时间\t周转时间\t带权周转时间");
 		File file = new File("./result/single_queue_result.txt");
 		BufferedWriter out = new BufferedWriter(new FileWriter(file));
-		out.write("任务编号\t到达时间\t服务时间\t开始时间\t完成时间\t周转时间\t带权周转时间\n");
+		out.write("任务编号\t到达时间\t服务时间\t开始时间\t完成时间\t周转时间\t带权周转时间");
+		out.newLine();
 		for(int i=0;i<list.size();i++){
 			t=list.get(i);
 			out.write(t.getTaskID()+"\t\t"+t.getArrivalTime()+"\t\t"+t.getServiceTime()+"\t\t"+
-			t.getStartingTime()+"\t\t"+t.getFinishingTime()+"\t\t"+t.getTurnAroundTime()+"\t\t"+t.getWeightTurnAroundTime()+"\n");
+			t.getStartingTime()+"\t\t"+t.getFinishingTime()+"\t\t"+t.getTurnAroundTime()+"\t\t"+t.getWeightTurnAroundTime());
+			out.newLine();
 		}
 		out.flush();
 		out.close();
